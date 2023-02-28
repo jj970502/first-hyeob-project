@@ -1,0 +1,44 @@
+Html기본 문법
+1. Tag(태그) // 모든 표현하고자 하는 텍스트는 <>여기에</> 표시해야 한다.
+<strong></strong> : 텍스트를 진하게 표시
+<u></u> : underline(밑줄)
+<h1></h1> : heading(제목) h는 1~9...11..등 숫자가 커질 수록 글씨 크기가 작은 부제목이 된다.
+ex)<h1>hello</h1>
+   <h2>my</h2>
+   <h3>name</h3>
+   <h4>is</h4>
+   <h5>ryan</h5>
+<br> : 줄바꿈(줄바꿈은 열고닫는게 없고, 하나만 써도 가능하며 두개 이상 쓸 경 중간에 다른 텍스트를 표시하지 않는다.)
+<p></p> : paragraph(단락)
+<img> : image 넣는 태그, 이미지는 속성(attribute)을 이용해야한다(어떠한 image를 불러올것인가에 대한정보) 그러므로
+img + source, <img src="이미지주소"> 이렇게 표시 해야한다. 하지만 항상 이렇게 하면 복잡하니, 먼저 이미지를 내 컴퓨터에 다운 받은 후
+vs code로 가져온다. 그 후 이미지의 이름만 바꿔주고(ex. cording.jpg) "" 안에 "cording.jpg" 이렇게 적어주면 쉽게 불러올 수 있다.
+또한 이미지의 크기가 나의 생각과 다르다면 직접 width=""라는 크기 속성을 이용해 크기를 변환시켜 줄 수 있다.<img src="cording.jpg" width="50%"> 예를 들어 이렇게,
+<li></li> : list 목차 태그
+<ul></ul> : unoldered list 다른 목록과 구분할 수 있도록 경계가 필요하다. 이 때 사용하는 태그가 <ul> 태그이다. li태그와 ul태그는 서로 함께 작용 한다. 
+ex.) <ul><li>A</li><ul>  부모와 자녀의 관계처럼 함께 써야하는 태그 이다.
+<ol></ol> : oldered list 순서가 있는 태그(예를들어 10000000개의 항목을 완성했는데 누군가 2번째 항목을 지워달라고 할때, ol태그를 사용하면 항목의 순서를 알 수 있기때문에 쉽게 찾아서 수정할 수 있다.
+문장이 모이면 무엇이 되나요?
+페이지가 됩니다.
+페이지가 모이면 책이 됩니다.
+정보를 잘 정리정돈하기 위한 체계,
+다시 말해서 구조라는 것이 필요합니다.
+<title></title> : 웹 페이지 이름 설정 태그( title 태그는 검색엔진이 웹페이지를 분석할 때 가장 중요하게 생각하는 태그)
+만약 영어가 아닌 다른 언어로 웹페이지를 만들면 문자가 깨지는 경향이 있습니다. 이걸 방지하기 위해 vs code 에디터 하단에 html 옆에 있는 웹페이지 방식을 항상 UTF-8로 지정해야한다.
+항상 UTF-8로 저장해야하고, 컴퓨터에게 웹페이지를 열때 항상 UTF-8로 열라는 태그를 작성해줘야합니다.
+<meta charset="utf-8"> : 웹페이지를 열때 utf-8 속성으로 열어라 태그. 이 태그를 작성해주시면 됩니다.
+방금 사용한 title과 meta태그는 웹페이지에 나타낼 본문이 아니므로 본문과 분류해주어야합니다.
+본문은 body 태그로
+본문을 설명하는 태그는 head 태그를
+사용합니다.
+<head></head> : 본문을 설명하는 태그
+<body></body> : 본문 태그
+<html></html> : body와 head태그를 감싸는 가장 큰 태그
+<!doctype html> : 이 웹페이지는 html로 만들어졌다는 것을 표시하는 태그; 가장 위에 쓴다.
+태그가 웹의 왕국이라면
+지금부터 설명드릴 태그는
+이 왕국의 제왕입니다. 바로 가장 중요
+<a href="링크"> : HTML의 약자 HyperText Markup Language의 HyperText, anchor의 a, href는 HyperText Reference, 바로 link 링크 태그 입니다.
+<a href="https://www.w3.org/TR/html5/" target="_blank"> : target="blank"는 새로운 창에서 이 링크를 열어라 라는 뜻입니다.
+<a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification"> : title은 마우스를 링크에 가져가 댔을때 이게 어떤 페이지인지에 대한 간략한 설명을 담고있는 툴팁 기능입니다.
+ex) <a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a>
